@@ -22,3 +22,31 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+usersテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|id|integer||
+|name|string|null: false|
+|email|string|unique: true|
+|password|string|null: false|
+
+
+### Association
+- has_many messages
+- has_many groups_users
+
+messagesテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|id|integer||
+|body|text||
+|image|string||
+|user_id|references||
+|group_id|references||
+
+### Association
+- belongs_to user
+- belongs_to group
