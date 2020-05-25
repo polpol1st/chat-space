@@ -45,8 +45,8 @@ messagesテーブル
 |id|integer||
 |body|text||
 |image|string||
-|user_id|references||
-|group_id|references||
+|user_id|references|null: false, foreign_key: true|
+|group_id|references|null: false, foreign_key: true|
 
 ### Association
 - belongs_to user
@@ -68,8 +68,8 @@ group_users
 
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|ull: false, foreign_key: true|
-|group_id|integer|ull: false, foreign_key: true|
+|user_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :group
