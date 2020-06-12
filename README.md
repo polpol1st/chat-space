@@ -73,4 +73,4 @@ group_users
 
 ### Association
 - belongs_to :group
-- belongs_to :user
+- belongs_to :usern
