@@ -1,1 +1,31 @@
-<チャット画面>
+.chat_main
+  .main-heder
+    .main-heder__left-box 
+      .main-heder__left-box__current-group polpol
+      .main-heder__left-box__menber-list Menber: popopo
+    = link_to 'Edit', "#", class: 'main-heder__edit-btn'
+     
+  .masseges
+    .user-time
+      .user-name popopo
+      .time 2020/06/25(Thu) 13:35:09
+    .massege またね
+
+    .user-time
+      .user-name popopo
+      .time 2020/06/25(Thu) 13:35:10
+    .massege おはよう
+
+    .user-time
+      .user-name popopo
+      .time 2020/06/25(Thu) 13:35:12
+    .massege おやすみ
+
+  .form
+    .new_massege
+      .input-box
+        %input.input-box__text{placeholder: "type a text", type: "text"}
+        %label.input-box__image
+          %i.fa.fa-image
+          %input.input-box__image__file{type: "file"}
+      %input.submit-btn{type: "submit", value: "send"}
