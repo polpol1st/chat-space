@@ -1,8 +1,8 @@
 .chat_main
   .main_heder
-    .main_heder_left-box 
-      .main_heder_left-box_current-group polpol
-      .main_heder_left-box_menber-list Menber: popopo
+    .main_heder__left-box 
+      .main_heder__left-box__current-group polpol
+      .main_heder__left-box__menber-list Menber: popopo
     = link_to 'Edit', "#", class: 'main_heder_edit-btn'
      
   .masseges
@@ -23,9 +23,9 @@
 
   .form
     .new_massege
-      .input_box
-        %input.input_box-text{ :placeholder => "type a text", :type => "text",}/
-        %label.input_box-image
+      .input-box
+        %input.input-box__text{ :placeholder => "type a text", :type => "text",}/
+        %label.input-box__image
           %i.fa.fa-image
-          %input.input_box-imege-file{ :type => "file",}/
+          %input.input-box__image__file{ :type => "file",}/
       %input.submit-btn{ :type => "submit",:value => "send",}/

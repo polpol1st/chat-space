@@ -1,18 +1,18 @@
-.chat_side {
+.chat-side {
   height: 100vh;
   width: 300px;
   background-color: #253141;
   float: left;
   
 }
-.side_heder {
+.side-heder {
   height: 100px;
   background-color: #253141;
   align-items: center;
   display: flex;
 }
 
-.top_items {
+.top-items {
   height: 20px;
   width: 260px;
   background-color: #253141;
@@ -22,19 +22,18 @@
   line-height: 20px;
   text-align:center;
 
-}
-
-.top_items__name {
+  &__name {
   color: #ffffff;
   font-size: 16px;
 
-}
+  }
 
-.top_items__icon {
+  &__icon {
   width: 60px;
   text-decoration: none;
   text-align:right;
 
+  }
 }
 
 .groups {
@@ -47,16 +46,15 @@
   margin-bottom: 40px;
   color: #ffffff;
 
-}
-
-.group_name { 
+  &__name { 
   font-size: 15px;
   margin-bottom: 5px;
-}
+  }
 
-.group_massege{
+  &__massege{
   font-size: 11px;
 
+  }
 }
 
 
