@@ -1,11 +1,12 @@
 .chat-side
   .side-heder
     .top-items
-      .top-items__name lololo
+      .top-items__name 
+        = current_user.name
       .top-items__icon 
         = link_to "#" do
           %i.fa.fa-edit
-        = link_to "#" do
+        = link_to edit_user_path(current_user) do
           %i.fa.fa-cog
   .groups
     .group
