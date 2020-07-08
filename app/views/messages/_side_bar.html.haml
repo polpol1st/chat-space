@@ -4,11 +4,14 @@
       .top-items__name 
         = current_user.name
       .top-items__icon 
-        = link_to "#" do
+        = link_to new_group_path do
           %i.fa.fa-edit
         = link_to edit_user_path(current_user) do
           %i.fa.fa-cog
   .groups
-    .group
-      .group__name popopo
-      .group__massege まだメッセージはありません
+    -current_user.groups.each do |group|
+      .group
+        = link_to '#' do
+          .group__name 
+            = group.name
+          .group__massege まだメッセージはありません
