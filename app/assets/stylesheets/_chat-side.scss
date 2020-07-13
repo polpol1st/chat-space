@@ -40,20 +40,26 @@
   height: calc(100vh - 100px);
   padding: 20px 20px 0;
   background-color: #2f3e51;
-}
 
-.group{
-  margin-bottom: 40px;
-  color: #ffffff;
 
-  &__name { 
-  font-size: 15px;
-  margin-bottom: 5px;
-  }
+  .group{
+    margin-bottom: 40px;
+    color: #ffffff;
 
-  &__massege{
-  font-size: 11px;
+    a{
+      color: #ffffff;
+      text-decoration: none;
+    }
 
+    &__name { 
+    font-size: 15px;
+    margin-bottom: 5px;
+    }
+
+    &__massege{
+    font-size: 11px;
+
+    }
   }
 }
 
