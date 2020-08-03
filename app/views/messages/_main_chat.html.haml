@@ -10,12 +10,12 @@
 
     = link_to 'Edit', edit_group_path(@group), class: 'main-heder__edit-btn'
      
-  .masseges
+  .messages
     = render @messages
 
   .form
     = form_for [@group, @message] do |f|
-      .new_massege
+      .new_message
         .input-box
           =f.text_field :content, class: 'input-box__text', placeholder: 'type a message'
           =f.label :image, class: 'input-box__image' do
