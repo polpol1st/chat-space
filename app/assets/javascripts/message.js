@@ -66,7 +66,8 @@ $(function(){
       $('form')[0].reset();
       $('.submit-btn').prop('disabled', false);
     })
-  })
+  });
+
   var reloadMessages = function() {
     var last_message_id = $('.message:last').data("message-id");
     $.ajax({
@@ -90,6 +91,6 @@ $(function(){
     });
   };
   if (document.location.href.match(/\/groups\/\d+\/messages/)) {
-    setInterval(reloadMessages, 300);
+    setInterval(reloadMessages, 7000);
   }
 });
